@@ -1,0 +1,181 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.kontejner{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    margin-top: 0.5%;
+    align-items: center;
+    justify-content: space-between;
+}
+.slikaZeneM{
+    display: none;
+}
+
+.opis{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.slika{
+    width: 45%;
+}
+
+.slikaZeneD{
+    width: 100%;
+}
+
+.naslov{
+    margin-top: 20%;
+    font-size: 250%;
+    letter-spacing: 15px;
+    opacity: 0.9;
+}
+
+.we{
+    color: hotpink;
+}
+
+.tekst{
+    margin-top: 5%;
+    color: hotpink;
+    opacity: 0.8;
+}
+
+.mejl{
+    margin-top: 10%;
+    width: 100%;
+    display: flex;
+    border: none;
+}
+
+.mejl input{
+    border: solid hotpink 1px;
+    border-radius: 40px;
+    width: 92%;
+    height: 7vh;
+    text-indent: 25px;
+    outline: none;
+}
+
+::placeholder{
+    color: hotpink;
+    opacity: 0.7;
+}
+
+input:focus{
+    border-color:hotpink;
+    border-width:1.5px;
+}
+
+.uzvicnikIDugme{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    margin-left: 22%;
+    width: 8%;
+}
+
+.uzvicnikIDugme img {
+    height: 4vh;
+    padding-right: 10%;
+    visibility: hidden;
+}
+
+button{
+    border: none;
+    border-radius: 40px;
+    background-color: #ff99ff;
+    color: lavender;
+    font-size: large;
+    width: 77%;
+    height: 7.4vh;
+    margin-right: 5%;
+}
+
+button:focus{
+    outline: none;
+}
+
+.poruka{
+   text-indent: 3%;
+   visibility: hidden;
+}
+
+.poruka.da {
+    color:green;
+    visibility: visible;
+}
+
+.poruka.ne{
+    color: red;
+    visibility: visible;
+}
+
+@media (max-width:800px){
+    .kontejner{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+        margin-top: 0.5%;
+        margin-bottom: 15%;
+        align-items: center;
+        justify-content: center;
+    }
+    .slikaZeneD{
+        display: none;
+    }
+    .slika{
+        width: 100%;
+        margin-top: 20%;
+    }
+    .slikaZeneM{
+        display: flex;
+        width: 100%;
+    }
+    .opis{
+        width: 100%;
+        order: 2;
+        margin-top: 0;
+        text-align: center;
+    }
+    .naslov{
+        margin-top: 10%;
+        word-wrap: break-word;
+    }
+    .baseApp{
+        position: absolute;
+        margin-top: -80%;
+        margin-left: 5%;
+    }
+    .mejl{
+        justify-content: center;
+        margin: auto;
+        margin-top: 5%;
+        width: 80%;
+    }
+    .poruka{
+        width: 80%;
+        margin: auto;
+        visibility: hidden;
+        text-align: left;
+        text-indent:0;
+        padding-left: 10%;
+        font-size: smaller;
+    }
+    .uzvicnikIDugme{
+        margin-left: 50%;
+        width: 27%;
+    }
+    button{
+        width: 75%;
+
+    }   
+}
+
